@@ -1,7 +1,8 @@
 class sayHello:
-	name="anurag"
+	def __init__(self,name):
+		self.name=name
 	def hello(self):
-		print "Hello ",sayHello.name
+		print "Hello ",self.name
 
-sh=sayHello()
+sh=sayHello("anurag")
 sh.hello()
